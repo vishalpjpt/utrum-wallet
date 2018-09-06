@@ -21,6 +21,7 @@ export default {
     return {
       mnzTelegramUrl: 'https://t.me/utrumdotio',
       mnzDiscordUrl: 'https://discord.gg/tyf8Mqx',
+      ootTwitterURl: 'https://twitter.com/utrumdotio',
     };
   },
   mounted() {
@@ -32,6 +33,9 @@ export default {
     openMnzDiscord() {
       electron.shell.openExternal(this.mnzDiscordUrl);
     },
+    openOOTTwitter() {
+      electron.shell.openExternal(this.ootTwitterURl);
+    }
   },
   computed: {
   },
